@@ -1,40 +1,41 @@
 {
-  "name": "raptor-dust",
-  "version": "0.3.0-beta",
-  "description": "Support module for integrating Dust and RaptorJS",
-  "keywords": [
-    "dust",
-    "raptor",
-    "loader",
-    "packaging",
-    "optimization",
-    "optimizer",
-    "templating",
-    "template"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/raptorjs3/raptor-dust.git"
-  },
-  "scripts": {
-    "test": "node_modules/.bin/jshint lib"
-  },
-  "author": "Patrick Steele-Idem <psteeleidem@ebay.com>",
-  "contributors": [
-    "Patrick Steele-Idem <psteeleidem@ebay.com>"
-  ],
-  "maintainers": "Patrick Steele-Idem <psteeleidem@ebay.com>",
-  "dependencies": {
-    "raptor-render-context": "~0.2.0-beta",
-    "raptor-util": "~0.2.0-beta",
-    "raptor-promises": "~0.2.0-beta",
-    "raptor-logging": "~0.2.0-beta"
-  },
-  "devDependencies": {
-    "jshint": "~2.3.0",
-    "mocha": "~1.15.1",
-    "chai": "~1.8.1"
-  },
-  "license": "Apache License v2.0",
-  "main": "lib/raptor-dust.js"
+    "path": "/Users/psteeleidem/development/github/raptorjs3/raptor-dust/package.json",
+    "name": "raptor-dust",
+    "description": "Support module for integrating Dust and RaptorJS",
+    "keywords": [
+        "dust",
+        "raptor",
+        "loader",
+        "packaging",
+        "optimization",
+        "optimizer",
+        "templating",
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/raptorjs3/raptor-dust.git"
+    },
+    "scripts": {
+        "test": "node_modules/.bin/jshint lib"
+    },
+    "author": "Patrick Steele-Idem <psteeleidem@ebay.com>",
+    "contributors": [
+        "Patrick Steele-Idem <psteeleidem@ebay.com>"
+    ],
+    "maintainers": "Patrick Steele-Idem <psteeleidem@ebay.com>",
+    "dependencies": {
+        "raptor-render-context": "~0.2.0-beta",
+        "raptor-util": "~0.2.0-beta",
+        "raptor-promises": "~0.2.0-beta",
+        "raptor-logging": "~0.2.0-beta"
+    },
+    "devDependencies": {
+        "jshint": "~2.3.0",
+        "mocha": "~1.15.1",
+        "chai": "~1.8.1"
+    },
+    "license": "Apache License v2.0",
+    "main": "lib/raptor-dust.js",
+    "version": "0.3.1-beta"
 }
