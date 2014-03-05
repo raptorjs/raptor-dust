@@ -37,5 +37,5 @@
     },
     "license": "Apache License v2.0",
     "main": "lib/raptor-dust.js",
-    "version": "0.3.2-beta"
+    "version": "0.3.3-beta"
 }
