@@ -1,5 +1,4 @@
 {
-    "path": "/Users/psteeleidem/development/github/raptorjs3/raptor-dust/package.json",
     "name": "raptor-dust",
     "description": "Support module for integrating Dust and RaptorJS",
     "keywords": [
@@ -25,11 +24,11 @@
     ],
     "maintainers": "Patrick Steele-Idem <psteeleidem@ebay.com>",
     "dependencies": {
-        "raptor-render-context": "~0.2.0-beta",
-        "raptor-util": "~0.2.0-beta",
-        "raptor-promises": "~0.2.0-beta",
-        "raptor-logging": "~0.2.0-beta",
-        "raptor-optimizer-taglib": "0.1.0-beta"
+        "raptor-render-context": "^0.2.0-beta",
+        "raptor-util": "^0.2.0-beta",
+        "raptor-promises": "^0.2.0-beta",
+        "raptor-logging": "^0.2.0-beta",
+        "raptor-optimizer-taglib": "^0.1.0-beta"
     },
     "devDependencies": {
         "jshint": "~2.3.0",
