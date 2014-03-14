@@ -1,5 +1,4 @@
 {
-    "path": "/Users/psteeleidem/development/github/raptorjs3/raptor-dust/package.json",
     "name": "raptor-dust",
     "description": "Support module for integrating Dust and RaptorJS",
     "keywords": [
@@ -38,5 +37,5 @@
     },
     "license": "Apache License v2.0",
     "main": "lib/raptor-dust.js",
-    "version": "0.3.5-beta"
+    "version": "0.3.6-beta"
 }
