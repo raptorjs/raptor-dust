@@ -8,3 +8,4 @@
 /.local
 *.orig
 *.sublime-workspace
+/static
