@@ -31,7 +31,7 @@
         "jshint": "^2.5.0",
         "mocha": "~1.15.1",
         "chai": "~1.8.1",
-        "dustjs-linkedin": "^2.3.4"
+        "dustjs-linkedin": "^2.3.5"
     },
     "license": "Apache License v2.0",
     "main": "lib/raptor-dust.js",
