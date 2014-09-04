@@ -24,8 +24,8 @@
   ],
   "maintainers": "Patrick Steele-Idem <psteeleidem@ebay.com>",
   "dependencies": {
-    "raptor-render-context": "^0.2.0-beta",
-    "raptor-util": "^0.2.2-beta"
+    "raptor-render-context": "^1.0.0-beta",
+    "raptor-util": "^1.0.0-beta"
   },
   "devDependencies": {
     "jshint": "^2.5.0",
