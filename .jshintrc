@@ -30,6 +30,7 @@
     "white": false,
     "eqeqeq": false,
     "latedef": true,
+    "strict": false,
     
     /* Relaxing options: */
     "eqnull": true
