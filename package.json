@@ -25,7 +25,7 @@
   "maintainers": "Patrick Steele-Idem <psteeleidem@ebay.com>",
   "dependencies": {
     "async-writer": "^1.1.0",
-    "raptor-util": "^1.0.0-beta"
+    "raptor-util": "^1.0.0"
   },
   "devDependencies": {
     "jshint": "^2.5.0",
