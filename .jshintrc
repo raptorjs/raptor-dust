@@ -31,7 +31,8 @@
     "eqeqeq": false,
     "latedef": true,
     "strict": false,
-    
+    "unused": "vars",
+
     /* Relaxing options: */
     "eqnull": true
 }
