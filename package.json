@@ -13,7 +13,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/raptorjs3/raptor-dust.git"
+        "url": "https://github.com/raptorjs/raptor-dust.git"
     },
     "scripts": {
         "test": "node_modules/.bin/mocha --ui bdd --reporter spec ./test && node_modules/.bin/jshint lib"
