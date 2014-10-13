@@ -20,6 +20,15 @@ dust.onLoad = function(path, callback) {
 var raptorDust = require('../');
 raptorDust.registerHelper('app-hello', require('./components/app-hello/renderer'));
 
+raptorDust.registerHelper('async-test', function(input, out) {
+    var asyncOut = out.beginAsync();
+
+    setTimeout(function () {
+        asyncOut.write('Hello Async');
+        asyncOut.end();
+    }, 1000);
+});
+
 describe('raptor-dust' , function() {
 
     beforeEach(function(done) {
@@ -42,5 +51,17 @@ describe('raptor-dust' , function() {
             done();
         });
     });
+
+    it('should allow a simple async tag to be rendered', function(done) {
+        dust.render(require.resolve('./pages/async-test.dust'), {}, function(err, output) {
+            if (err) {
+                return done(err);
+            }
+
+            expect(output).to.equal('Hello Async');
+            done();
+        });
+    });
+
 
 });
