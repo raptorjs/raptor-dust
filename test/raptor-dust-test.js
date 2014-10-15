@@ -26,7 +26,7 @@ raptorDust.registerHelper('async-test', function(input, out) {
     setTimeout(function () {
         asyncOut.write('Hello Async');
         asyncOut.end();
-    }, 1000);
+    }, 200);
 });
 
 describe('raptor-dust' , function() {
@@ -63,5 +63,44 @@ describe('raptor-dust' , function() {
         });
     });
 
+    it('should allow dust.stream() to be used with an existing async writer', function(done) {
+        var out = require('async-writer').create();
+        var asyncOut = out.beginAsync();
+        var output = '';
+        out.on('finish', function() {
+            expect(output).to.equal('Hello Async');
+            done();
+        });
+
+        var templatePath = require.resolve('./pages/async-test.dust');
+        var templateData = {};
+        var attributes = out.attributes;
+        var base = attributes.dustBase;
+
+        if (!base) {
+            // Make sure all Dust context objects use the "attributes"
+            // as their global so that attributes are carried across
+            // rendering calls
+            attributes.stream = out.stream;
+            base = attributes.dustBase = dust.makeBase(attributes);
+        }
+
+        if (out.dustContext) {
+            base = out.dustContext.push(base);
+        }
+
+        templateData = base.push(templateData);
+        templateData.templateName = templatePath;
+
+        dust.stream(templatePath, templateData)
+            .on('data', function(data) {
+                output += data;
+            })
+            .on('end', function() {
+                asyncOut.end();
+            });
+
+        out.end();
+    });
 
 });
